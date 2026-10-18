@@ -2,7 +2,7 @@
 
 > A physics-based biomechanical simulation of backward locomotion in *Drosophila melanogaster*, informed by descending neuron connectomics and presented as an interactive theatrical web performance.
 
-*Interactive Web Experience — Local runner available below (public deployment pending).*
+**Live Interactive Experience**: [https://moonwalker-fly.vercel.app](https://moonwalker-fly.vercel.app)
 
 ![Moonwalker Fly Interactive Experience](docs/assets/screenshot_browser_moonwalking.png)
 
