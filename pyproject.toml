@@ -1,0 +1,15 @@
+[project]
+name = "moonwalker-fly"
+version = "0.1.0"
+description = "A biomechanical Drosophila moonwalk simulation with connectome-informed control."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "av>=18.1.0",
+    "flygym==2.1.0",
+    "imageio>=2.37.4",
+    "imageio-ffmpeg>=0.6.0",
+    "mujoco>=3.9.0",
+    "numpy>=2.0,<3.0",
+    "pillow>=12.3.0",
+    "pyarrow>=25.0.1",
+]

@@ -1,0 +1,1165 @@
+{
+  "dataset": {
+    "name": "BANC",
+    "version": "v888",
+    "specimen_sex": "female",
+    "coverage": "Whole brain and ventral nerve cord",
+    "nature_doi": "10.1038/s41586-026-10735-w",
+    "harvard_dataverse_doi": "10.7910/DVN/7WTH1N",
+    "source_license": "CC BY 4.0"
+  },
+  "provenance_and_rules": {
+    "canonical_identity_rule": "primary BANC cell_type == 'MDN'",
+    "identity_consistency_checks": "super_class == 'descending', cell_class == 'descending_neuron', exactly 2 left and 2 right",
+    "cross_dataset_annotations": "supporting only; does not independently confer MDN membership",
+    "cross_dataset_mdn_like_noncanonical_matches": [
+      {
+        "root_id": "720575941551774526",
+        "banc_888_id": "720575941551774526",
+        "primary_cell_type": "DNpe023",
+        "side": "left",
+        "super_class": "descending",
+        "matching_imported_fields": {
+          "hemibrain_cell_type": "auto:MDN"
+        }
+      },
+      {
+        "root_id": "720575941615549593",
+        "banc_888_id": "720575941615549593",
+        "primary_cell_type": "CB0543",
+        "side": "right",
+        "super_class": "central_brain_intrinsic",
+        "matching_imported_fields": {
+          "hemibrain_cell_type": "auto:MDN"
+        }
+      }
+    ]
+  },
+  "raw_sources": {
+    "metadata_url": "https://storage.googleapis.com/lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/banc_888_meta.feather",
+    "metadata_bytes": 57503026,
+    "metadata_sha256": "86ccf5df0c67419f8c5f43e93a7ed38d23a080e9f7fde26737290252f3780098",
+    "metadata_reused_from_m4": true,
+    "edge_url": "https://storage.googleapis.com/lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/banc_888_edgelist_simple_v2.feather",
+    "edge_bytes": 305250378,
+    "edge_sha256": "363fdef3813b72a5e45a42f17034cd5a544b654c838929cecf6e1ce5f60625cb",
+    "edge_downloaded_this_task": false
+  },
+  "extraction": {
+    "min_synapses": 3,
+    "metadata_row_count": 188508,
+    "edge_list_row_count": 11752828,
+    "duplicate_ordered_pairs_in_edgelist": false,
+    "retained_mdn_edge_count": 1087,
+    "total_upstream_edges": 669,
+    "total_downstream_edges": 418,
+    "total_upstream_retained_synapses": 5954,
+    "total_downstream_retained_synapses": 4488
+  },
+  "mdn_neurons": [
+    {
+      "root_id": "720575941491012809",
+      "banc_888_id": "720575941491012809",
+      "cell_type": "MDN",
+      "side": "left",
+      "super_class": "descending",
+      "cell_class": "descending_neuron",
+      "cell_sub_class": null,
+      "flow": "intrinsic",
+      "neurotransmitter_predicted": "acetylcholine",
+      "neurotransmitter_score": 0.9477,
+      "hemilineage": "primary",
+      "neuromere": null,
+      "cell_function": null,
+      "cell_function_detailed": null,
+      "supporting_cross_dataset_annotations": {
+        "fafb_cell_type": "MDN",
+        "manc_cell_type": "MDN",
+        "malecns_cell_type": "MDN",
+        "hemibrain_cell_type": "MDN",
+        "fanc_cell_type": "auto:MDN, MDN4, moonwalker descending neuron"
+      }
+    },
+    {
+      "root_id": "720575941597827697",
+      "banc_888_id": "720575941499708745",
+      "cell_type": "MDN",
+      "side": "right",
+      "super_class": "descending",
+      "cell_class": "descending_neuron",
+      "cell_sub_class": null,
+      "flow": "intrinsic",
+      "neurotransmitter_predicted": "acetylcholine",
+      "neurotransmitter_score": 0.9107,
+      "hemilineage": "primary",
+      "neuromere": null,
+      "cell_function": null,
+      "cell_function_detailed": null,
+      "supporting_cross_dataset_annotations": {
+        "fafb_cell_type": "MDN",
+        "manc_cell_type": "MDN",
+        "malecns_cell_type": "MDN",
+        "hemibrain_cell_type": "MDN",
+        "fanc_cell_type": null
+      }
+    },
+    {
+      "root_id": "720575941690515574",
+      "banc_888_id": "720575941491065653",
+      "cell_type": "MDN",
+      "side": "left",
+      "super_class": "descending",
+      "cell_class": "descending_neuron",
+      "cell_sub_class": null,
+      "flow": "intrinsic",
+      "neurotransmitter_predicted": "acetylcholine",
+      "neurotransmitter_score": 0.9452,
+      "hemilineage": "primary",
+      "neuromere": null,
+      "cell_function": null,
+      "cell_function_detailed": null,
+      "supporting_cross_dataset_annotations": {
+        "fafb_cell_type": "MDN",
+        "manc_cell_type": "MDN",
+        "malecns_cell_type": "MDN",
+        "hemibrain_cell_type": "MDN",
+        "fanc_cell_type": null
+      }
+    },
+    {
+      "root_id": "720575941592674814",
+      "banc_888_id": "720575941614906387",
+      "cell_type": "MDN",
+      "side": "right",
+      "super_class": "descending",
+      "cell_class": "descending_neuron",
+      "cell_sub_class": null,
+      "flow": "intrinsic",
+      "neurotransmitter_predicted": "acetylcholine",
+      "neurotransmitter_score": 0.9359,
+      "hemilineage": "primary",
+      "neuromere": null,
+      "cell_function": null,
+      "cell_function_detailed": null,
+      "supporting_cross_dataset_annotations": {
+        "fafb_cell_type": "MDN",
+        "manc_cell_type": "MDN",
+        "malecns_cell_type": "MDN",
+        "hemibrain_cell_type": "MDN",
+        "fanc_cell_type": "auto:MDN, MDN4, moonwalker descending neuron"
+      }
+    }
+  ],
+  "connectivity_summary": {
+    "720575941491012809": {
+      "upstream_edge_count": 162,
+      "downstream_edge_count": 114,
+      "upstream_total_retained_synapses": 1410,
+      "downstream_total_retained_synapses": 1135
+    },
+    "720575941592674814": {
+      "upstream_edge_count": 173,
+      "downstream_edge_count": 101,
+      "upstream_total_retained_synapses": 1551,
+      "downstream_total_retained_synapses": 1146
+    },
+    "720575941597827697": {
+      "upstream_edge_count": 182,
+      "downstream_edge_count": 97,
+      "upstream_total_retained_synapses": 1598,
+      "downstream_total_retained_synapses": 1019
+    },
+    "720575941690515574": {
+      "upstream_edge_count": 152,
+      "downstream_edge_count": 106,
+      "upstream_total_retained_synapses": 1395,
+      "downstream_total_retained_synapses": 1188
+    }
+  },
+  "top_partners": {
+    "720575941491012809": {
+      "top_upstream_partners": [
+        {
+          "partner_root_id": "720575941491012809",
+          "partner_banc_888_id": "720575941491012809",
+          "partner_cell_type": "MDN",
+          "synapse_count": 72
+        },
+        {
+          "partner_root_id": "720575941589466935",
+          "partner_banc_888_id": "720575941589466935",
+          "partner_cell_type": "CB0095",
+          "synapse_count": 45
+        },
+        {
+          "partner_root_id": "720575941490558261",
+          "partner_banc_888_id": "720575941490558261",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 30
+        },
+        {
+          "partner_root_id": "720575941532753893",
+          "partner_banc_888_id": "720575941532753893",
+          "partner_cell_type": "AN06B075",
+          "synapse_count": 30
+        },
+        {
+          "partner_root_id": "720575941551774526",
+          "partner_banc_888_id": "720575941551774526",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 29
+        },
+        {
+          "partner_root_id": "720575941443541930",
+          "partner_banc_888_id": "720575941443541930",
+          "partner_cell_type": "CB0095",
+          "synapse_count": 26
+        },
+        {
+          "partner_root_id": "720575941512515907",
+          "partner_banc_888_id": "720575941512515907",
+          "partner_cell_type": "AN06B075",
+          "synapse_count": 25
+        },
+        {
+          "partner_root_id": "720575941612278630",
+          "partner_banc_888_id": "720575941612278630",
+          "partner_cell_type": "AN06B012",
+          "synapse_count": 25
+        },
+        {
+          "partner_root_id": "720575941499166281",
+          "partner_banc_888_id": "720575941499166281",
+          "partner_cell_type": "DNge124",
+          "synapse_count": 24
+        },
+        {
+          "partner_root_id": "720575941626193819",
+          "partner_banc_888_id": "720575941626193819",
+          "partner_cell_type": "LAL040",
+          "synapse_count": 22
+        },
+        {
+          "partner_root_id": "720575941552163583",
+          "partner_banc_888_id": "720575941552163583",
+          "partner_cell_type": "DNpe022",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941564369920",
+          "partner_banc_888_id": "720575941564369920",
+          "partner_cell_type": "LAL040",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941392861700",
+          "partner_banc_888_id": "720575941392861700",
+          "partner_cell_type": "LAL162",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941615545564",
+          "partner_banc_888_id": "720575941476272443",
+          "partner_cell_type": "PS185b",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941458753261",
+          "partner_banc_888_id": "720575941590387012",
+          "partner_cell_type": "LAL051",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941609057389",
+          "partner_banc_888_id": "720575941609057389",
+          "partner_cell_type": "AN17A026",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941471704587",
+          "partner_banc_888_id": "720575941471704587",
+          "partner_cell_type": "VES073",
+          "synapse_count": 18
+        },
+        {
+          "partner_root_id": "720575941614548755",
+          "partner_banc_888_id": "720575941614548755",
+          "partner_cell_type": "LAL162",
+          "synapse_count": 18
+        },
+        {
+          "partner_root_id": "720575941561757997",
+          "partner_banc_888_id": "720575941561757997",
+          "partner_cell_type": "PS183",
+          "synapse_count": 17
+        },
+        {
+          "partner_root_id": "720575941532426699",
+          "partner_banc_888_id": "720575941532426699",
+          "partner_cell_type": "AOTU019",
+          "synapse_count": 16
+        }
+      ],
+      "top_downstream_partners": [
+        {
+          "partner_root_id": "720575941491012809",
+          "partner_banc_888_id": "720575941491012809",
+          "partner_cell_type": "MDN",
+          "synapse_count": 72
+        },
+        {
+          "partner_root_id": "720575941535028914",
+          "partner_banc_888_id": "720575941535028914",
+          "partner_cell_type": "IN03B015",
+          "synapse_count": 52
+        },
+        {
+          "partner_root_id": "720575941506535874",
+          "partner_banc_888_id": "720575941669069043",
+          "partner_cell_type": "LBL40",
+          "synapse_count": 41
+        },
+        {
+          "partner_root_id": "720575941704593626",
+          "partner_banc_888_id": "720575941704593626",
+          "partner_cell_type": "AN07B017",
+          "synapse_count": 39
+        },
+        {
+          "partner_root_id": "720575941480974048",
+          "partner_banc_888_id": "720575941480974048",
+          "partner_cell_type": "DNg88",
+          "synapse_count": 36
+        },
+        {
+          "partner_root_id": "720575941642429640",
+          "partner_banc_888_id": "720575941642429640",
+          "partner_cell_type": "IN03B015",
+          "synapse_count": 35
+        },
+        {
+          "partner_root_id": "720575941524912461",
+          "partner_banc_888_id": "720575941524912461",
+          "partner_cell_type": "IN03B019",
+          "synapse_count": 33
+        },
+        {
+          "partner_root_id": "720575941429125295",
+          "partner_banc_888_id": "720575941429125295",
+          "partner_cell_type": "CB0172",
+          "synapse_count": 27
+        },
+        {
+          "partner_root_id": "720575941429988088",
+          "partner_banc_888_id": "720575941429988088",
+          "partner_cell_type": "IN03B019",
+          "synapse_count": 27
+        },
+        {
+          "partner_root_id": "720575941615549593",
+          "partner_banc_888_id": "720575941615549593",
+          "partner_cell_type": "CB0543",
+          "synapse_count": 25
+        },
+        {
+          "partner_root_id": "720575941570551540",
+          "partner_banc_888_id": "720575941570551540",
+          "partner_cell_type": "IN09A007",
+          "synapse_count": 24
+        },
+        {
+          "partner_root_id": "720575941553670791",
+          "partner_banc_888_id": "720575941553670791",
+          "partner_cell_type": "DNa13",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941642906529",
+          "partner_banc_888_id": "720575941642906529",
+          "partner_cell_type": "DNge124",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941490558261",
+          "partner_banc_888_id": "720575941490558261",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941440913243",
+          "partner_banc_888_id": "720575941440913243",
+          "partner_cell_type": "LAL082",
+          "synapse_count": 18
+        },
+        {
+          "partner_root_id": "720575941599063232",
+          "partner_banc_888_id": "720575941599063232",
+          "partner_cell_type": "AN18B022",
+          "synapse_count": 18
+        },
+        {
+          "partner_root_id": "720575941543607740",
+          "partner_banc_888_id": "720575941543607740",
+          "partner_cell_type": "IN07B010",
+          "synapse_count": 16
+        },
+        {
+          "partner_root_id": "720575941566170112",
+          "partner_banc_888_id": "720575941627562634",
+          "partner_cell_type": "AN19B010",
+          "synapse_count": 16
+        },
+        {
+          "partner_root_id": "720575941515909635",
+          "partner_banc_888_id": "720575941515909635",
+          "partner_cell_type": "AN00A006",
+          "synapse_count": 15
+        },
+        {
+          "partner_root_id": "720575941537344227",
+          "partner_banc_888_id": "720575941537344227",
+          "partner_cell_type": "IN12B003",
+          "synapse_count": 14
+        }
+      ]
+    },
+    "720575941592674814": {
+      "top_upstream_partners": [
+        {
+          "partner_root_id": "720575941443541930",
+          "partner_banc_888_id": "720575941443541930",
+          "partner_cell_type": "CB0095",
+          "synapse_count": 52
+        },
+        {
+          "partner_root_id": "720575941592674814",
+          "partner_banc_888_id": "720575941614906387",
+          "partner_cell_type": "MDN",
+          "synapse_count": 51
+        },
+        {
+          "partner_root_id": "720575941589466935",
+          "partner_banc_888_id": "720575941589466935",
+          "partner_cell_type": "CB0095",
+          "synapse_count": 48
+        },
+        {
+          "partner_root_id": "720575941551774526",
+          "partner_banc_888_id": "720575941551774526",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 43
+        },
+        {
+          "partner_root_id": "720575941490558261",
+          "partner_banc_888_id": "720575941490558261",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 41
+        },
+        {
+          "partner_root_id": "720575941642906529",
+          "partner_banc_888_id": "720575941642906529",
+          "partner_cell_type": "DNge124",
+          "synapse_count": 31
+        },
+        {
+          "partner_root_id": "720575941458753261",
+          "partner_banc_888_id": "720575941590387012",
+          "partner_cell_type": "LAL051",
+          "synapse_count": 29
+        },
+        {
+          "partner_root_id": "720575941440415455",
+          "partner_banc_888_id": "720575941440415455",
+          "partner_cell_type": "AN06B012",
+          "synapse_count": 27
+        },
+        {
+          "partner_root_id": "720575941537162010",
+          "partner_banc_888_id": "720575941537162010",
+          "partner_cell_type": "AN17A026",
+          "synapse_count": 27
+        },
+        {
+          "partner_root_id": "720575941561757997",
+          "partner_banc_888_id": "720575941561757997",
+          "partner_cell_type": "PS183",
+          "synapse_count": 24
+        },
+        {
+          "partner_root_id": "720575941641042549",
+          "partner_banc_888_id": "720575941483106243",
+          "partner_cell_type": "AN02A002",
+          "synapse_count": 24
+        },
+        {
+          "partner_root_id": "720575941519182764",
+          "partner_banc_888_id": "720575941519182764",
+          "partner_cell_type": "PS183",
+          "synapse_count": 23
+        },
+        {
+          "partner_root_id": "720575941598339973",
+          "partner_banc_888_id": "720575941471794443",
+          "partner_cell_type": "LAL112",
+          "synapse_count": 23
+        },
+        {
+          "partner_root_id": "720575941612278630",
+          "partner_banc_888_id": "720575941612278630",
+          "partner_cell_type": "AN06B012",
+          "synapse_count": 23
+        },
+        {
+          "partner_root_id": "720575941528042521",
+          "partner_banc_888_id": "720575941528042521",
+          "partner_cell_type": "LAL144a",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941532753893",
+          "partner_banc_888_id": "720575941532753893",
+          "partner_cell_type": "AN06B075",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941535167320",
+          "partner_banc_888_id": "720575941535167320",
+          "partner_cell_type": "DNge134",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941512515907",
+          "partner_banc_888_id": "720575941512515907",
+          "partner_cell_type": "AN06B075",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941431795927",
+          "partner_banc_888_id": "720575941431795927",
+          "partner_cell_type": "AN08B057",
+          "synapse_count": 18
+        },
+        {
+          "partner_root_id": "720575941552163583",
+          "partner_banc_888_id": "720575941552163583",
+          "partner_cell_type": "DNpe022",
+          "synapse_count": 18
+        }
+      ],
+      "top_downstream_partners": [
+        {
+          "partner_root_id": "720575941531252939",
+          "partner_banc_888_id": "720575941531252939",
+          "partner_cell_type": "AN07B017",
+          "synapse_count": 62
+        },
+        {
+          "partner_root_id": "720575941448143541",
+          "partner_banc_888_id": "720575941448143541",
+          "partner_cell_type": "IN03B015",
+          "synapse_count": 60
+        },
+        {
+          "partner_root_id": "720575941412551791",
+          "partner_banc_888_id": "720575941412551791",
+          "partner_cell_type": "IN03B015",
+          "synapse_count": 51
+        },
+        {
+          "partner_root_id": "720575941592674814",
+          "partner_banc_888_id": "720575941614906387",
+          "partner_cell_type": "MDN",
+          "synapse_count": 51
+        },
+        {
+          "partner_root_id": "720575941432240599",
+          "partner_banc_888_id": "720575941432240599",
+          "partner_cell_type": "CB0172",
+          "synapse_count": 44
+        },
+        {
+          "partner_root_id": "720575941595419687",
+          "partner_banc_888_id": "720575941595419687",
+          "partner_cell_type": "CB0543",
+          "synapse_count": 38
+        },
+        {
+          "partner_root_id": "720575941702096602",
+          "partner_banc_888_id": "720575941702096602",
+          "partner_cell_type": "IN12B003",
+          "synapse_count": 32
+        },
+        {
+          "partner_root_id": "720575941671851185",
+          "partner_banc_888_id": "720575941471130231",
+          "partner_cell_type": "IN07B010",
+          "synapse_count": 31
+        },
+        {
+          "partner_root_id": "720575941528320952",
+          "partner_banc_888_id": "720575941528320952",
+          "partner_cell_type": "DNg88",
+          "synapse_count": 28
+        },
+        {
+          "partner_root_id": "720575941551774526",
+          "partner_banc_888_id": "720575941551774526",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 25
+        },
+        {
+          "partner_root_id": "720575941614012892",
+          "partner_banc_888_id": "720575941614012892",
+          "partner_cell_type": "DNg64",
+          "synapse_count": 25
+        },
+        {
+          "partner_root_id": "720575941438455340",
+          "partner_banc_888_id": "720575941438455340",
+          "partner_cell_type": "IN03B019",
+          "synapse_count": 23
+        },
+        {
+          "partner_root_id": "720575941472141610",
+          "partner_banc_888_id": "720575941472141610",
+          "partner_cell_type": "IN01A038",
+          "synapse_count": 22
+        },
+        {
+          "partner_root_id": "720575941542645084",
+          "partner_banc_888_id": "720575941542645084",
+          "partner_cell_type": "LAL082",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941566992903",
+          "partner_banc_888_id": "720575941555393537",
+          "partner_cell_type": "DNa13",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941615554268",
+          "partner_banc_888_id": "720575941669107187",
+          "partner_cell_type": "LBL40",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941643053394",
+          "partner_banc_888_id": "720575941643053394",
+          "partner_cell_type": "IN01A025",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941568342119",
+          "partner_banc_888_id": "720575941598907072",
+          "partner_cell_type": "DNa13",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941499166281",
+          "partner_banc_888_id": "720575941499166281",
+          "partner_cell_type": "DNge124",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941661428280",
+          "partner_banc_888_id": "720575941661428280",
+          "partner_cell_type": "AN02A046",
+          "synapse_count": 19
+        }
+      ]
+    },
+    "720575941597827697": {
+      "top_upstream_partners": [
+        {
+          "partner_root_id": "720575941443541930",
+          "partner_banc_888_id": "720575941443541930",
+          "partner_cell_type": "CB0095",
+          "synapse_count": 53
+        },
+        {
+          "partner_root_id": "720575941597827697",
+          "partner_banc_888_id": "720575941499708745",
+          "partner_cell_type": "MDN",
+          "synapse_count": 45
+        },
+        {
+          "partner_root_id": "720575941490558261",
+          "partner_banc_888_id": "720575941490558261",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 40
+        },
+        {
+          "partner_root_id": "720575941532753893",
+          "partner_banc_888_id": "720575941532753893",
+          "partner_cell_type": "AN06B075",
+          "synapse_count": 38
+        },
+        {
+          "partner_root_id": "720575941551774526",
+          "partner_banc_888_id": "720575941551774526",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 35
+        },
+        {
+          "partner_root_id": "720575941589466935",
+          "partner_banc_888_id": "720575941589466935",
+          "partner_cell_type": "CB0095",
+          "synapse_count": 35
+        },
+        {
+          "partner_root_id": "720575941612278630",
+          "partner_banc_888_id": "720575941612278630",
+          "partner_cell_type": "AN06B012",
+          "synapse_count": 33
+        },
+        {
+          "partner_root_id": "720575941512515907",
+          "partner_banc_888_id": "720575941512515907",
+          "partner_cell_type": "AN06B075",
+          "synapse_count": 25
+        },
+        {
+          "partner_root_id": "720575941460798960",
+          "partner_banc_888_id": "720575941644314213",
+          "partner_cell_type": "LAL051",
+          "synapse_count": 24
+        },
+        {
+          "partner_root_id": "720575941537162010",
+          "partner_banc_888_id": "720575941537162010",
+          "partner_cell_type": "AN17A026",
+          "synapse_count": 23
+        },
+        {
+          "partner_root_id": "720575941642906529",
+          "partner_banc_888_id": "720575941642906529",
+          "partner_cell_type": "DNge124",
+          "synapse_count": 23
+        },
+        {
+          "partner_root_id": "720575941440415455",
+          "partner_banc_888_id": "720575941440415455",
+          "partner_cell_type": "AN06B012",
+          "synapse_count": 22
+        },
+        {
+          "partner_root_id": "720575941474101344",
+          "partner_banc_888_id": "720575941474101344",
+          "partner_cell_type": "AN02A002",
+          "synapse_count": 22
+        },
+        {
+          "partner_root_id": "720575941488457990",
+          "partner_banc_888_id": "720575941519589848",
+          "partner_cell_type": "AOTU019",
+          "synapse_count": 22
+        },
+        {
+          "partner_root_id": "720575941482072259",
+          "partner_banc_888_id": "720575941482072259",
+          "partner_cell_type": "LAL171,LAL172",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941533693377",
+          "partner_banc_888_id": "720575941533693377",
+          "partner_cell_type": "LAL144a",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941521411950",
+          "partner_banc_888_id": "720575941393566870",
+          "partner_cell_type": "LAL160,LAL161",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941561757997",
+          "partner_banc_888_id": "720575941561757997",
+          "partner_cell_type": "PS183",
+          "synapse_count": 18
+        },
+        {
+          "partner_root_id": "720575941626193819",
+          "partner_banc_888_id": "720575941626193819",
+          "partner_cell_type": "LAL040",
+          "synapse_count": 18
+        },
+        {
+          "partner_root_id": "720575941528042521",
+          "partner_banc_888_id": "720575941528042521",
+          "partner_cell_type": "LAL144a",
+          "synapse_count": 17
+        }
+      ],
+      "top_downstream_partners": [
+        {
+          "partner_root_id": "720575941412551791",
+          "partner_banc_888_id": "720575941412551791",
+          "partner_cell_type": "IN03B015",
+          "synapse_count": 62
+        },
+        {
+          "partner_root_id": "720575941448143541",
+          "partner_banc_888_id": "720575941448143541",
+          "partner_cell_type": "IN03B015",
+          "synapse_count": 62
+        },
+        {
+          "partner_root_id": "720575941597827697",
+          "partner_banc_888_id": "720575941499708745",
+          "partner_cell_type": "MDN",
+          "synapse_count": 45
+        },
+        {
+          "partner_root_id": "720575941528320952",
+          "partner_banc_888_id": "720575941528320952",
+          "partner_cell_type": "DNg88",
+          "synapse_count": 40
+        },
+        {
+          "partner_root_id": "720575941531252939",
+          "partner_banc_888_id": "720575941531252939",
+          "partner_cell_type": "AN07B017",
+          "synapse_count": 40
+        },
+        {
+          "partner_root_id": "720575941595419687",
+          "partner_banc_888_id": "720575941595419687",
+          "partner_cell_type": "CB0543",
+          "synapse_count": 39
+        },
+        {
+          "partner_root_id": "720575941499166281",
+          "partner_banc_888_id": "720575941499166281",
+          "partner_cell_type": "DNge124",
+          "synapse_count": 31
+        },
+        {
+          "partner_root_id": "720575941568342119",
+          "partner_banc_888_id": "720575941598907072",
+          "partner_cell_type": "DNa13",
+          "synapse_count": 29
+        },
+        {
+          "partner_root_id": "720575941432240599",
+          "partner_banc_888_id": "720575941432240599",
+          "partner_cell_type": "CB0172",
+          "synapse_count": 28
+        },
+        {
+          "partner_root_id": "720575941438455340",
+          "partner_banc_888_id": "720575941438455340",
+          "partner_cell_type": "IN03B019",
+          "synapse_count": 27
+        },
+        {
+          "partner_root_id": "720575941671851185",
+          "partner_banc_888_id": "720575941471130231",
+          "partner_cell_type": "IN07B010",
+          "synapse_count": 26
+        },
+        {
+          "partner_root_id": "720575941542645084",
+          "partner_banc_888_id": "720575941542645084",
+          "partner_cell_type": "LAL082",
+          "synapse_count": 24
+        },
+        {
+          "partner_root_id": "720575941566992903",
+          "partner_banc_888_id": "720575941555393537",
+          "partner_cell_type": "DNa13",
+          "synapse_count": 22
+        },
+        {
+          "partner_root_id": "720575941614012892",
+          "partner_banc_888_id": "720575941614012892",
+          "partner_cell_type": "DNg64",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941643053394",
+          "partner_banc_888_id": "720575941643053394",
+          "partner_cell_type": "IN01A025",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941577885288",
+          "partner_banc_888_id": "720575941577885288",
+          "partner_cell_type": "AN05B007",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941551774526",
+          "partner_banc_888_id": "720575941551774526",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941538114197",
+          "partner_banc_888_id": "720575941538114197",
+          "partner_cell_type": "IN19A001",
+          "synapse_count": 15
+        },
+        {
+          "partner_root_id": "720575941615554268",
+          "partner_banc_888_id": "720575941669107187",
+          "partner_cell_type": "LBL40",
+          "synapse_count": 15
+        },
+        {
+          "partner_root_id": "720575941642488993",
+          "partner_banc_888_id": "720575941642488993",
+          "partner_cell_type": "IN03B019",
+          "synapse_count": 15
+        }
+      ]
+    },
+    "720575941690515574": {
+      "top_upstream_partners": [
+        {
+          "partner_root_id": "720575941690515574",
+          "partner_banc_888_id": "720575941491065653",
+          "partner_cell_type": "MDN",
+          "synapse_count": 66
+        },
+        {
+          "partner_root_id": "720575941589466935",
+          "partner_banc_888_id": "720575941589466935",
+          "partner_cell_type": "CB0095",
+          "synapse_count": 37
+        },
+        {
+          "partner_root_id": "720575941443541930",
+          "partner_banc_888_id": "720575941443541930",
+          "partner_cell_type": "CB0095",
+          "synapse_count": 34
+        },
+        {
+          "partner_root_id": "720575941499166281",
+          "partner_banc_888_id": "720575941499166281",
+          "partner_cell_type": "DNge124",
+          "synapse_count": 32
+        },
+        {
+          "partner_root_id": "720575941490558261",
+          "partner_banc_888_id": "720575941490558261",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 30
+        },
+        {
+          "partner_root_id": "720575941612278630",
+          "partner_banc_888_id": "720575941612278630",
+          "partner_cell_type": "AN06B012",
+          "synapse_count": 27
+        },
+        {
+          "partner_root_id": "720575941551774526",
+          "partner_banc_888_id": "720575941551774526",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 26
+        },
+        {
+          "partner_root_id": "720575941532426699",
+          "partner_banc_888_id": "720575941532426699",
+          "partner_cell_type": "AOTU019",
+          "synapse_count": 24
+        },
+        {
+          "partner_root_id": "720575941460798960",
+          "partner_banc_888_id": "720575941644314213",
+          "partner_cell_type": "LAL051",
+          "synapse_count": 23
+        },
+        {
+          "partner_root_id": "720575941440415455",
+          "partner_banc_888_id": "720575941440415455",
+          "partner_cell_type": "AN06B012",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941598339973",
+          "partner_banc_888_id": "720575941471794443",
+          "partner_cell_type": "LAL112",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941614548755",
+          "partner_banc_888_id": "720575941614548755",
+          "partner_cell_type": "LAL162",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941533693377",
+          "partner_banc_888_id": "720575941533693377",
+          "partner_cell_type": "LAL144a",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941521411950",
+          "partner_banc_888_id": "720575941393566870",
+          "partner_cell_type": "LAL160,LAL161",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941528042521",
+          "partner_banc_888_id": "720575941528042521",
+          "partner_cell_type": "LAL144a",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941532753893",
+          "partner_banc_888_id": "720575941532753893",
+          "partner_cell_type": "AN06B075",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941620079743",
+          "partner_banc_888_id": "720575941620079743",
+          "partner_cell_type": "LAL112",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941458753261",
+          "partner_banc_888_id": "720575941590387012",
+          "partner_cell_type": "LAL051",
+          "synapse_count": 18
+        },
+        {
+          "partner_root_id": "720575941519182764",
+          "partner_banc_888_id": "720575941519182764",
+          "partner_cell_type": "PS183",
+          "synapse_count": 18
+        },
+        {
+          "partner_root_id": "720575941561757997",
+          "partner_banc_888_id": "720575941561757997",
+          "partner_cell_type": "PS183",
+          "synapse_count": 18
+        }
+      ],
+      "top_downstream_partners": [
+        {
+          "partner_root_id": "720575941690515574",
+          "partner_banc_888_id": "720575941491065653",
+          "partner_cell_type": "MDN",
+          "synapse_count": 66
+        },
+        {
+          "partner_root_id": "720575941704593626",
+          "partner_banc_888_id": "720575941704593626",
+          "partner_cell_type": "AN07B017",
+          "synapse_count": 57
+        },
+        {
+          "partner_root_id": "720575941535028914",
+          "partner_banc_888_id": "720575941535028914",
+          "partner_cell_type": "IN03B015",
+          "synapse_count": 56
+        },
+        {
+          "partner_root_id": "720575941506535874",
+          "partner_banc_888_id": "720575941669069043",
+          "partner_cell_type": "LBL40",
+          "synapse_count": 45
+        },
+        {
+          "partner_root_id": "720575941615549593",
+          "partner_banc_888_id": "720575941615549593",
+          "partner_cell_type": "CB0543",
+          "synapse_count": 42
+        },
+        {
+          "partner_root_id": "720575941429125295",
+          "partner_banc_888_id": "720575941429125295",
+          "partner_cell_type": "CB0172",
+          "synapse_count": 39
+        },
+        {
+          "partner_root_id": "720575941642429640",
+          "partner_banc_888_id": "720575941642429640",
+          "partner_cell_type": "IN03B015",
+          "synapse_count": 36
+        },
+        {
+          "partner_root_id": "720575941480974048",
+          "partner_banc_888_id": "720575941480974048",
+          "partner_cell_type": "DNg88",
+          "synapse_count": 34
+        },
+        {
+          "partner_root_id": "720575941586409540",
+          "partner_banc_888_id": "720575941586409540",
+          "partner_cell_type": "IN03A010",
+          "synapse_count": 28
+        },
+        {
+          "partner_root_id": "720575941599063232",
+          "partner_banc_888_id": "720575941599063232",
+          "partner_cell_type": "AN18B022",
+          "synapse_count": 27
+        },
+        {
+          "partner_root_id": "720575941490558261",
+          "partner_banc_888_id": "720575941490558261",
+          "partner_cell_type": "DNpe023",
+          "synapse_count": 25
+        },
+        {
+          "partner_root_id": "720575941642906529",
+          "partner_banc_888_id": "720575941642906529",
+          "partner_cell_type": "DNge124",
+          "synapse_count": 25
+        },
+        {
+          "partner_root_id": "720575941570551540",
+          "partner_banc_888_id": "720575941570551540",
+          "partner_cell_type": "IN09A007",
+          "synapse_count": 23
+        },
+        {
+          "partner_root_id": "720575941524912461",
+          "partner_banc_888_id": "720575941524912461",
+          "partner_cell_type": "IN03B019",
+          "synapse_count": 22
+        },
+        {
+          "partner_root_id": "720575941537344227",
+          "partner_banc_888_id": "720575941537344227",
+          "partner_cell_type": "IN12B003",
+          "synapse_count": 21
+        },
+        {
+          "partner_root_id": "720575941429988088",
+          "partner_banc_888_id": "720575941429988088",
+          "partner_cell_type": "IN03B019",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941543607740",
+          "partner_banc_888_id": "720575941543607740",
+          "partner_cell_type": "IN07B010",
+          "synapse_count": 20
+        },
+        {
+          "partner_root_id": "720575941484535482",
+          "partner_banc_888_id": "720575941484535482",
+          "partner_cell_type": "DNg64",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941553670791",
+          "partner_banc_888_id": "720575941553670791",
+          "partner_cell_type": "DNa13",
+          "synapse_count": 19
+        },
+        {
+          "partner_root_id": "720575941566170112",
+          "partner_banc_888_id": "720575941627562634",
+          "partner_cell_type": "AN19B010",
+          "synapse_count": 17
+        }
+      ]
+    }
+  }
+}

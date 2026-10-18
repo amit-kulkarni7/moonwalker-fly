@@ -1,0 +1,25 @@
+{
+  "milestone": "MW-M33",
+  "phase": "IMMERSIVE_EXPERIENCE_FOUNDATION",
+  "resolution": [
+    1280,
+    720
+  ],
+  "aspect_ratio": "16:9",
+  "fps": 60,
+  "assets": {
+    "poster_habitat_16x9": "web/assets/poster_habitat_16x9.png",
+    "video_moonwalk_16x9": "web/assets/video_moonwalk_16x9.mp4",
+    "video_idle_16x9": "web/assets/video_idle_16x9.mp4",
+    "modular_clips": [
+      "output/m33/video_idle_1_rest.mp4",
+      "output/m33/video_idle_2_reposition.mp4",
+      "output/m33/video_idle_3_settle.mp4"
+    ]
+  },
+  "moonwalk_duration_source_sec": 1.4333333333333333,
+  "moonwalk_duration_05x_presentation_sec": 2.8666666666666667,
+  "idle_duration_sec": 6.0,
+  "first_frame_diff_vs_q105": 9.802922362744937e-14,
+  "loop_continuity_diff": 9.122911965087077e-05
+}

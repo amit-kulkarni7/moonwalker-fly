@@ -1,0 +1,295 @@
+{
+  "milestone": "MW-M27",
+  "task": "Selective hind-leg relief causal intervention",
+  "provenance_parameters": {
+    "cadence": 6.0,
+    "stance_excursion_fraction": 1.0,
+    "turnaround_fraction": 0.06,
+    "support_transfer_fraction": 0.08,
+    "entry_duration": 0.25
+  },
+  "frozen_heights_provenance": {
+    "LF": -1.0424534343726277,
+    "LM": -1.0876066769550565,
+    "LH": -0.9750830473328336,
+    "RF": -1.041986691037106,
+    "RM": -1.0882983748972959,
+    "RH": -0.9719454335077823
+  },
+  "condition_d_excursions": {
+    "LF": 1.0,
+    "LM": 0.564,
+    "LH": 0.779,
+    "RF": 1.0,
+    "RM": 0.564,
+    "RH": 0.779
+  },
+  "preflight_c_isolation": {
+    "status": "PASS",
+    "SAME_STATE_B_VS_C_FRONT_MIDDLE_TARGET_MAX_DIFF_RAD": 6.661338147750939e-16,
+    "SAME_STATE_C_HIND_DIFF_VS_NOMINAL_MAX_RAD": 0.0,
+    "SAME_STATE_B_HIND_CORRECTION_MIN_RAD": 0.02992226990331237,
+    "per_leg_fm_diffs_rad": {
+      "LF": 0.0,
+      "LM": 0.0,
+      "RF": 0.0,
+      "RM": 6.661338147750939e-16
+    },
+    "hind_diffs_C_rad": {
+      "LH": 0.0,
+      "RH": 0.0
+    },
+    "hind_corrections_B_rad": {
+      "LH": 0.08590364136577078,
+      "RH": 0.02992226990331237
+    },
+    "dynamic_code_path_invariants_verified": true
+  },
+  "preflight_d_manipulation": {
+    "status": "PASS",
+    "TARGET_SUPPORT_VX_SPREAD_B": 5.314609510372215,
+    "TARGET_SUPPORT_VX_SPREAD_D": 2.001103412338945,
+    "VELOCITY_SPREAD_REDUCTION_FRACTION": 0.6234712242859033,
+    "tripod_a_spread_B": 5.314609510370216,
+    "tripod_a_spread_D": 2.0011034123379456,
+    "tripod_a_reduction_fraction": 0.6234712242859497,
+    "tripod_b_spread_B": 5.314609510374213,
+    "tripod_b_spread_D": 2.001103412339944,
+    "tripod_b_reduction_fraction": 0.6234712242858569,
+    "nominal_strokes_B_mm": {
+      "LF": 0.6867574737845437,
+      "LM": 1.0510370934154518,
+      "LH": 0.8723975827118113,
+      "RF": 0.6867574737845353,
+      "RM": 1.0510370934014943,
+      "RH": 0.8723975827118027
+    },
+    "nominal_strokes_D_mm": {
+      "LF": 0.6867574737845437,
+      "LM": 0.6502397891784778,
+      "LH": 0.6941869452042324,
+      "RF": 0.6867574737845353,
+      "RM": 0.650239789178486,
+      "RH": 0.6941869452042266
+    },
+    "nominal_velocities_B_mm_s": {
+      "LF": 8.164602937793086,
+      "LM": 13.479212448164635,
+      "LH": 12.36750062911618,
+      "RF": 8.164602937790422,
+      "RM": 13.479212448163302,
+      "RH": 12.367500629120176
+    },
+    "nominal_velocities_D_mm_s": {
+      "LF": 8.164602937793086,
+      "LM": 7.603129871036174,
+      "LH": 9.604233283373453,
+      "RF": 8.164602937790422,
+      "RM": 7.603129871035508,
+      "RH": 9.604233283376118
+    }
+  },
+  "reproduction_gates": {
+    "gate_a_pass": true,
+    "gate_b_pass": true,
+    "overall_reproduction_pass": true,
+    "condition_a_checks": {
+      "speed": {
+        "val": 9.925710884636604,
+        "target": 9.93,
+        "tol": 0.1,
+        "pass": true
+      },
+      "cv50": {
+        "val": 0.2315301879652896,
+        "target": 0.232,
+        "tol": 0.01,
+        "pass": true
+      },
+      "pitch_ptp": {
+        "val": 8.381007360509575,
+        "target": 8.38,
+        "tol": 0.25,
+        "pass": true
+      },
+      "all3_contact": {
+        "val": 0.6157303370786517,
+        "target": 0.616,
+        "tol": 0.02,
+        "pass": true
+      }
+    },
+    "condition_b_checks": {
+      "speed": {
+        "val": 10.402881579645568,
+        "target": 10.4,
+        "tol": 0.15,
+        "pass": true
+      },
+      "cv50": {
+        "val": 0.3274945372189738,
+        "target": 0.327,
+        "tol": 0.015,
+        "pass": true
+      },
+      "pitch_ptp": {
+        "val": 8.56524254558696,
+        "target": 8.57,
+        "tol": 0.25,
+        "pass": true
+      },
+      "all3_contact": {
+        "val": 0.9415730337078652,
+        "target": 0.942,
+        "tol": 0.015,
+        "pass": true
+      }
+    }
+  },
+  "telemetry_integrity_gates": {
+    "A": {
+      "telemetry_integrity_pass": true,
+      "forces_finite": true,
+      "fz_positive_continuous": true,
+      "actuator_saturation_fraction": 0.0,
+      "max_target_step_rad": 0.005226516122796676,
+      "abdomen_contact_count": 0
+    },
+    "B": {
+      "telemetry_integrity_pass": true,
+      "forces_finite": true,
+      "fz_positive_continuous": true,
+      "actuator_saturation_fraction": 0.0,
+      "max_target_step_rad": 0.0052175921247687995,
+      "abdomen_contact_count": 0
+    },
+    "C": {
+      "telemetry_integrity_pass": true,
+      "forces_finite": true,
+      "fz_positive_continuous": true,
+      "actuator_saturation_fraction": 0.0,
+      "max_target_step_rad": 0.0052175921247687995,
+      "abdomen_contact_count": 0
+    },
+    "D": {
+      "telemetry_integrity_pass": true,
+      "forces_finite": true,
+      "fz_positive_continuous": true,
+      "actuator_saturation_fraction": 0.0,
+      "max_target_step_rad": 0.004343616221126579,
+      "abdomen_contact_count": 0
+    }
+  },
+  "condition_c_classification": "HIND_CONSTRAINT_HYPOTHESIS_NOT_SUPPORTED",
+  "condition_c_secondary_diagnostic": "HIND_RELIEF_POSTURALLY_CONFOUNDED",
+  "condition_c_criteria_evaluation": {
+    "cancellation_improvement_ge_008": {
+      "val": -0.3344470799287249,
+      "thresh": 0.08,
+      "pass": false
+    },
+    "opposing_fraction_improvement_ge_008": {
+      "val": -0.5772944748843098,
+      "thresh": 0.08,
+      "pass": false
+    },
+    "cv50_improvement_ge_15pct": {
+      "val": -0.12203830906575154,
+      "thresh": 0.15,
+      "pass": false
+    },
+    "wrong_sign_improvement_ge_50pct_or_le_004": {
+      "val": -0.5468750000000001,
+      "val_abs": 0.14132762312633834,
+      "pass": false
+    },
+    "backward_speed_ge_85": {
+      "val": 8.941969085576194,
+      "thresh": 8.5,
+      "pass": true
+    },
+    "pitch_ptp_not_worse_10pct_vs_m8": {
+      "val": 8.596029332525859,
+      "ref_m8": 8.381007360509575,
+      "max_allowed": 9.219108096560532,
+      "pass": true
+    },
+    "z_ptp_le_014": {
+      "val": 0.19197046536206863,
+      "thresh": 0.14,
+      "pass": false
+    },
+    "lateral_ratio_le_002": {
+      "val": 0.030996417733001637,
+      "thresh": 0.02,
+      "pass": false
+    },
+    "numerical_integrity_pass": {
+      "pass": true
+    }
+  },
+  "condition_d_classification": "EXCURSION_MATCHING_NOT_SUPPORTED",
+  "condition_d_criteria_evaluation": {
+    "nominal_velocity_spread_reduction_ge_50pct": {
+      "val": 0.6234712242859033,
+      "pass": true
+    },
+    "cancellation_improvement_ge_008": {
+      "val": -0.0814989901374149,
+      "thresh": 0.08,
+      "pass": false
+    },
+    "opposing_fraction_improvement_ge_008": {
+      "val": -0.3248113498587135,
+      "thresh": 0.08,
+      "pass": false
+    },
+    "cv50_improvement_ge_15pct": {
+      "val": -0.00030909670075319557,
+      "thresh": 0.15,
+      "pass": false
+    },
+    "wrong_sign_improvement_ge_50pct_or_le_004": {
+      "val": 0.0,
+      "val_abs": 0.0913633119200571,
+      "pass": false
+    },
+    "backward_speed_ge_85": {
+      "val": 7.86970928854742,
+      "thresh": 8.5,
+      "pass": false
+    },
+    "pitch_ptp_le_b_or_improved_10pct": {
+      "val": 6.5052874253092945,
+      "ref_b": 8.56524254558696,
+      "pass": true
+    },
+    "roll_ptp_le_20deg": {
+      "val": 9.168004900039481,
+      "thresh": 20.0,
+      "pass": true
+    },
+    "z_ptp_le_014mm": {
+      "val": 0.10325824292259278,
+      "thresh": 0.14,
+      "pass": true
+    },
+    "lateral_ratio_le_002": {
+      "val": 0.036256562994155216,
+      "thresh": 0.02,
+      "pass": false
+    },
+    "numerical_integrity_pass": {
+      "pass": true
+    }
+  },
+  "b_vs_d_diagnostics": {
+    "COMMAND_MISMATCH_REDUCED": "YES",
+    "PHYSICAL_FORCE_CONFLICT_REDUCED": "NO",
+    "BODY_GLIDE_IMPROVED": "NO",
+    "velocity_spread_reduction_fraction": 0.6234712242859033,
+    "delta_cancellation_median_all3": -0.0814989901374149,
+    "cv50_reduction_fraction": -0.00030909670075319557,
+    "wrong_sign_20_reduction_fraction": 0.0
+  }
+}

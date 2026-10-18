@@ -1,0 +1,215 @@
+# REFINED VISUALIZATION CONFIGURATION FOR DROSOPHILA MELANOGASTER (V2)
+# Refined for natural muted amber-brown chitin, deep burgundy eyes,
+# clean non-noisy abdominal segmentation, and transparent glassy wings.
+
+wing:
+  apply_to: "*_wing"
+  material:
+    specular: 0.25
+    shininess: 0.20
+    rgba: [0.68, 0.72, 0.75, 0.13]
+
+eye:
+  apply_to: "*_eye"
+  material:
+    specular: 0.40
+    shininess: 0.50
+    rgba: [0.44, 0.07, 0.07, 1.0]
+
+arista:
+  apply_to: "*_arista"
+  material:
+    specular: 0.10
+    shininess: 0.10
+    rgba: [0.15, 0.10, 0.06, 1.0]
+
+haltere:
+  apply_to: "*_haltere"
+  material:
+    specular: 0.18
+    shininess: 0.18
+    rgba: [0.65, 0.52, 0.34, 1.0]
+
+head:
+  apply_to: "c_head"
+  material:
+    specular: 0.14
+    shininess: 0.18
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: flat
+    rgb1: [0.44, 0.30, 0.16]
+    rgb2: [0.44, 0.30, 0.16]
+    mark: none
+    width: 32
+    height: 32
+
+thorax:
+  apply_to: "c_thorax"
+  material:
+    specular: 0.12
+    shininess: 0.16
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: flat
+    rgb1: [0.42, 0.28, 0.15]
+    rgb2: [0.42, 0.28, 0.15]
+    mark: none
+    width: 32
+    height: 32
+
+antennaproboscis:
+  apply_to: ["*_pedicel", "*_funiculus", "c_rostrum", "c_haustellum"]
+  material:
+    specular: 0.12
+    shininess: 0.15
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: flat
+    rgb1: [0.38, 0.25, 0.13]
+    rgb2: [0.38, 0.25, 0.13]
+    mark: none
+    width: 32
+    height: 32
+
+# Segmented abdominal tergites: clean gradient without high-frequency noise
+abdomen12:
+  apply_to: "c_abdomen12"
+  material:
+    specular: 0.14
+    shininess: 0.18
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: gradient
+    rgb1: [0.14, 0.09, 0.05]
+    rgb2: [0.54, 0.38, 0.22]
+    mark: none
+    width: 32
+    height: 32
+
+abdomen3:
+  apply_to: "c_abdomen3"
+  material:
+    specular: 0.14
+    shininess: 0.18
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: gradient
+    rgb1: [0.12, 0.08, 0.04]
+    rgb2: [0.50, 0.35, 0.20]
+    mark: none
+    width: 32
+    height: 32
+
+abdomen4:
+  apply_to: "c_abdomen4"
+  material:
+    specular: 0.14
+    shininess: 0.18
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: gradient
+    rgb1: [0.10, 0.06, 0.03]
+    rgb2: [0.48, 0.33, 0.18]
+    mark: none
+    width: 32
+    height: 32
+
+# Posterior melanic abdominal cap
+abdomen5:
+  apply_to: "c_abdomen5"
+  material:
+    specular: 0.14
+    shininess: 0.18
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: gradient
+    rgb1: [0.09, 0.06, 0.03]
+    rgb2: [0.32, 0.22, 0.12]
+    mark: none
+    width: 32
+    height: 32
+
+abdomen6:
+  apply_to: "c_abdomen6"
+  material:
+    specular: 0.14
+    shininess: 0.18
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: flat
+    rgb1: [0.08, 0.05, 0.03]
+    rgb2: [0.08, 0.05, 0.03]
+    mark: none
+    width: 32
+    height: 32
+
+coxa:
+  apply_to: "*_coxa"
+  material:
+    specular: 0.14
+    shininess: 0.16
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: flat
+    rgb1: [0.44, 0.30, 0.16]
+    rgb2: [0.44, 0.30, 0.16]
+    mark: none
+    width: 32
+    height: 32
+
+trochanterfemur:
+  apply_to: "*_trochanterfemur"
+  material:
+    specular: 0.14
+    shininess: 0.16
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: flat
+    rgb1: [0.46, 0.32, 0.17]
+    rgb2: [0.46, 0.32, 0.17]
+    mark: none
+    width: 32
+    height: 32
+
+tibia:
+  apply_to: "*_tibia"
+  material:
+    specular: 0.14
+    shininess: 0.16
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: flat
+    rgb1: [0.48, 0.34, 0.18]
+    rgb2: [0.48, 0.34, 0.18]
+    mark: none
+    width: 32
+    height: 32
+
+tarsus1to4:
+  apply_to: ["*_tarsus1", "*_tarsus2", "*_tarsus3", "*_tarsus4"]
+  material:
+    specular: 0.14
+    shininess: 0.16
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: flat
+    rgb1: [0.46, 0.32, 0.17]
+    rgb2: [0.46, 0.32, 0.17]
+    mark: none
+    width: 32
+    height: 32
+
+tarsus5:
+  apply_to: "*_tarsus5"
+  material:
+    specular: 0.12
+    shininess: 0.14
+    rgba: [1, 1, 1, 1]
+  texture:
+    builtin: flat
+    rgb1: [0.26, 0.16, 0.09]
+    rgb2: [0.26, 0.16, 0.09]
+    mark: none
+    width: 32
+    height: 32

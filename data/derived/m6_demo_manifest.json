@@ -1,0 +1,100 @@
+{
+  "demo_version": "1.0.0",
+  "milestone": "MW-M6",
+  "software_versions": {
+    "flygym": "2.1.0",
+    "mujoco": "3.9.0",
+    "numpy": "2.5.3",
+    "imageio": "2.37.4"
+  },
+  "banc_dataset": {
+    "name": "BANC",
+    "version": "v888",
+    "nature_doi": "10.1038/s41586-026-10735-w"
+  },
+  "four_canonical_mdns": [
+    {
+      "label": "L1",
+      "root_id": "720575941491012809",
+      "banc_888_id": "720575941491012809",
+      "side": "Left",
+      "cell_type": "MDN",
+      "super_class": "descending",
+      "predicted_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "L2",
+      "root_id": "720575941690515574",
+      "banc_888_id": "720575941491065653",
+      "side": "Left",
+      "cell_type": "MDN",
+      "super_class": "descending",
+      "predicted_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "R1",
+      "root_id": "720575941592674814",
+      "banc_888_id": "720575941614906387",
+      "side": "Right",
+      "cell_type": "MDN",
+      "super_class": "descending",
+      "predicted_neurotransmitter": "acetylcholine"
+    },
+    {
+      "label": "R2",
+      "root_id": "720575941597827697",
+      "banc_888_id": "720575941499708745",
+      "side": "Right",
+      "cell_type": "MDN",
+      "super_class": "descending",
+      "predicted_neurotransmitter": "acetylcholine"
+    }
+  ],
+  "downstream_structural_context": {
+    "IN03B015": 414,
+    "AN07B017": 198,
+    "IN03B019": 185,
+    "CB0172": 165,
+    "DNa13": 156,
+    "LBL40": 122
+  },
+  "timeline_seconds": {
+    "total_simulation": 3.0,
+    "mdn_activation_time": 1.25,
+    "forward_phase_duration": 1.25,
+    "moonwalk_phase_duration": 1.75,
+    "playback_speed": 0.35,
+    "video_fps": 30
+  },
+  "causal_architecture": {
+    "causal_chain": "timeline_event -> MDN activities -> population command -> controller mode -> adhesion schedule",
+    "command_threshold": 0.5,
+    "moonwalk_phase_offset": 0.55,
+    "stock_joint_targets_preserved": true,
+    "max_joint_target_modification_rad": 0.0
+  },
+  "simulation_results": {
+    "pre_mdn_forward_displacement_mm": 16.653482534599625,
+    "post_mdn_x_displacement_mm": -28.216432659419592,
+    "total_x_displacement_mm": -11.562950124819967,
+    "total_y_displacement_mm": 2.9082869213274067,
+    "forward_to_reverse_transition_confirmed": true
+  },
+  "scientific_boundary": {
+    "statement": "Real BANC neuron identities + structural connectivity. MDN activity is a normalized command abstraction. Moonwalk gait is engineered; connectome dynamics are not simulated.",
+    "full_brain_simulation_claimed": false,
+    "connectome_dynamics_claimed": false,
+    "biological_moonwalk_claimed": false
+  },
+  "literature_dois": [
+    "10.1016/j.cub.2017.02.008",
+    "10.1038/s41467-020-19936-x",
+    "10.1038/s41586-026-10735-w"
+  ],
+  "runtime_artifacts": {
+    "base_simulation_video": "output/m6/base_simulation.mp4",
+    "base_metrics_json": "output/m6/base_metrics.json",
+    "final_1080p_demo_video": "output/m6/moonwalker_demo_v1.mp4",
+    "poster_image": "output/m6/moonwalker_poster.png"
+  }
+}

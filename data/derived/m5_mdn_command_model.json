@@ -1,0 +1,26 @@
+{
+  "source_facts": [
+    "Identified four canonical BANC MDNs with super_class 'descending' and primary cell_type 'MDN'.",
+    "Hemisphere: 2 Left, 2 Right.",
+    "Predicted neurotransmitter is acetylcholine.",
+    "Direct connectivity topology and partner lists exacted from BANC v888 simple edge list."
+  ],
+  "literature_supported_facts": [
+    "MDNs are necessary and sufficient command-type neurons for backward locomotion.",
+    "Asymmetric left/right MDN activity can contribute to backward turning.",
+    "MDN control is distributed through downstream motor circuits.",
+    "LBL40 and LUL130 have experimentally characterized roles in the neural pathways."
+  ],
+  "engineering_assumptions": [
+    "MDN activity is abstracted as a normalized command state in [0.0, 1.0].",
+    "All four canonical MDNs are activated simultaneously with full magnitude in this demonstration.",
+    "The transition uses a discrete switch threshold/state abstraction rather than continuous integration.",
+    "MDN population command maps deterministically to an engineered adhesion phase shift of 0.55 cycles.",
+    "This mapping demonstrates a feasible mechanism but makes no claim to represent biological kinematics."
+  ],
+  "relevant_literature_dois": [
+    "10.1016/j.cub.2017.02.008",
+    "10.1038/s41467-020-19936-x",
+    "10.1038/s41586-026-10735-w"
+  ]
+}

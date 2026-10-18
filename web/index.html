@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonwalker Fly</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪰</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="immersive-body">
+  <!-- Header -->
+  <header class="minimal-header">
+    <h1 class="header-title">Moonwalker Fly</h1>
+    <p class="header-subtitle">"A tiny fruit fly with a surprising talent."</p>
+  </header>
+
+  <!-- Viewport -->
+  <main class="immersive-viewport" id="viewport-stage">
+    <div class="video-stack">
+      <!-- Idle Habitat Video -->
+      <video
+        id="video-idle"
+        class="viewport-video active"
+        src="assets/video_idle_16x9.mp4"
+        poster="assets/poster_habitat_16x9.png"
+        autoplay
+        muted
+        playsinline
+        preload="auto"
+      ></video>
+
+      <!-- Stage Moonwalk Video -->
+      <video
+        id="video-stage"
+        class="viewport-video hidden"
+        src="assets/video_stage_16x9.mp4"
+        poster="assets/poster_stage_16x9.png"
+        muted
+        playsinline
+        preload="auto"
+      ></video>
+    </div>
+  </main>
+
+  <!-- Soundtrack -->
+  <audio id="audio-funk" src="assets/audio_moonwalk_funk.wav" preload="auto"></audio>
+
+  <!-- Controls -->
+  <footer class="floating-controls-wrapper">
+    <div class="control-pill" id="control-pill">
+      <!-- Moonwalk Button -->
+      <button id="btn-moonwalk" class="pill-btn primary" title="Trigger Moonwalk Performance">
+        <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+        <span class="btn-label" id="moonwalk-label">Moonwalk</span>
+      </button>
+
+      <!-- Replay Button -->
+      <button id="btn-replay" class="pill-btn primary is-hidden" title="Replay Moonwalk Performance">
+        <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 4v6h6M23 20v-6h-6"></path>
+          <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+        </svg>
+        <span class="btn-label" id="replay-label">Replay</span>
+      </button>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

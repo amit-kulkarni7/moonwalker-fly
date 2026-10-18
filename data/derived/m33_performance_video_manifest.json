@@ -1,0 +1,50 @@
+{
+  "milestone": "MW-M33",
+  "phase": "PHASE_2_FINAL_STAGE_PERFORMANCE_VIDEO",
+  "video_deliverables": {
+    "performance_video_10x": "output/m33/video_m27d_performance_10x.mp4",
+    "comparison_video_10x": null,
+    "comparison_screenshots": {}
+  },
+  "frame_specifications": {
+    "total_frames": 86,
+    "fps": 60,
+    "resolution": [
+      720,
+      960
+    ],
+    "duration_10x_s": 1.4333333333333333,
+    "duration_05x_browser_s": 2.8666666666666667,
+    "source_raw_indices": [
+      105,
+      530,
+      5
+    ],
+    "raw_trajectory_length": 531
+  },
+  "pose_correspondence_audit": {
+    "first_frame": {
+      "index": 0,
+      "traj_idx": 105,
+      "time_s": 0.39659999999997264
+    },
+    "middle_frame": {
+      "index": 43,
+      "traj_idx": 320,
+      "time_s": 1.1060999999998946
+    },
+    "last_frame": {
+      "index": 85,
+      "traj_idx": 530,
+      "time_s": 1.7990999999998183
+    },
+    "frame_count_match_with_m31": true,
+    "pose_jump_risk": "ZERO_DISCREPANCY_FORWARD_KINEMATICS"
+  },
+  "hat_verification": {
+    "attachment": "fly/c_thorax cranium frame (rigid)",
+    "hat_tilt_deg": 8.5,
+    "stability": "STABLE_ACROSS_ALL_86_FRAMES",
+    "eye_unobstructed": true
+  }
+}

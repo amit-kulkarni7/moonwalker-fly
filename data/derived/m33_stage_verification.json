@@ -1,0 +1,85 @@
+{
+  "milestone": "MW-M33",
+  "phase": "PHASE_1_VISUAL_PERFORMANCE_STAGE",
+  "hat_attachment": {
+    "body": "fly/c_thorax (cranium frame)",
+    "hat_position_local": [
+      0.24,
+      0.0,
+      0.398
+    ],
+    "forward_pitch_tilt_deg": 8.5,
+    "brim_dimensions_mm": [
+      0.38,
+      0.34,
+      0.013
+    ],
+    "crown_dimensions_mm": [
+      0.205,
+      0.0475
+    ],
+    "band_dimensions_mm": [
+      0.215,
+      0.012
+    ],
+    "eye_clearance_verified": true
+  },
+  "stage_environment": {
+    "floor_material": "matte ebony deck (roughness=0.82, specular=0.15, rgba=[0.14, 0.14, 0.16])",
+    "theatrical_spotlight": "overhead warm spotlight pool (cutoff=42 deg, exponent=8.0, castshadow=1)",
+    "key_light": "warm frontal key illuminating thorax, face, and legs (diffuse=[0.55, 0.50, 0.42])",
+    "fill_light": "soft cool shadow fill (diffuse=[0.32, 0.34, 0.40])",
+    "rim_light": "crisp dorsal rim contour for fedora silhouette (diffuse=[0.60, 0.58, 0.55])"
+  },
+  "trajectory_timing": {
+    "total_frames": 531,
+    "render_sampling_rate_hz": 300.0,
+    "synchronization": "exact 1:1 FlyGym renderer.render_as_needed alignment",
+    "full_simulation_duration_s": 1.75,
+    "presentation_window_s": [
+      0.35,
+      1.75
+    ],
+    "presentation_frame_range": [
+      105,
+      530
+    ],
+    "frame_phase1_steady_hero": {
+      "index": 120,
+      "time_s": 0.4460999999999672,
+      "notes": "matches M31 hero screenshot"
+    },
+    "frame_phase2_opposite_tripod": {
+      "index": 197,
+      "time_s": 0.7001999999999392,
+      "notes": "opposite tripod stance/swing"
+    }
+  },
+  "camera": {
+    "name": "herocam",
+    "pos_offset": [
+      -0.65,
+      -6.6,
+      3.4
+    ],
+    "fovy": 29.0,
+    "resolution": [
+      720,
+      960
+    ],
+    "framing_matched_to_m31": true
+  },
+  "physics_preservation": {
+    "mass_diff": 0.0,
+    "inertia_diff": 0.0,
+    "ipos_diff": 0.0,
+    "iquat_diff": 0.0,
+    "collision_active_geoms": 0,
+    "status": "PASS_BIT_EXACT_INVARIANCE"
+  },
+  "deliverables": {
+    "screenshot_phase1_png": "output/m33/screenshot_m33_stage_phase1.png",
+    "screenshot_phase2_png": "output/m33/screenshot_m33_stage_phase2.png",
+    "trajectory_file_npz": "data/derived/m33_m27d_trajectory.npz"
+  }
+}
